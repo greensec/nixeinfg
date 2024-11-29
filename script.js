@@ -204,7 +204,7 @@ const compress = (str, cb) => {
 
     lzma.compress(
         str,
-        1,
+        9,
         (compressed, err) => {
             if (err) {
                 progressBar.style.width = '0';
